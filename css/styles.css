@@ -11780,8 +11780,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 section#services {
-  background-color: #212529;
-  background-image: url("../assets/img/header2.jpg");
+  /* background-color: #212529; */
+  background-image: url("../assets/img/header3.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
