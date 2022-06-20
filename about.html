@@ -87,8 +87,8 @@
                                 <h4>Register</h4>
                                 <!-- <h4 class="subheading">Our Humble Beginnings</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">If so, you can join us by registering here…(link to form)</p></div>
-                            <button type="button" class="btn btn-primary text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="timeline-body"><p class="text-muted">If so, you can join us by registering here: </p></div>
+                            <button type="button" class="btn btn-primary text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-bottom: 0.5rem;">
                                 Donate Produce
                             </button>
                             <div class="timeline-body"><p class="text-muted">Your contact and tree information will be added to a map that will only be seen/available by these local food program partners,,,,list here.</p></div>
@@ -145,7 +145,7 @@
                     <h2 class="section-heading text-uppercase">Are you interested in becoming a volunteer gleaner / picker / harvester?</h2>
                     <h3 class="section-subheading text-muted" style="margin-bottom: 0.5rem;">If so, please register with us here:</h3>
                     <a class="btn btn-primary text-uppercase" href="https://forms.gle/3S5n7t27WobJ1UJPA " style="margin-bottom: 1rem;">Volunteer Signup</a>
-                    <h3 class="section-subheading text-muted">Your information will, like landowner's information, only be available to our food program partners. They may contact you at harvest time to request your help to pick/harvest/glean fruit and/or vegetables to share with the landowners & yourself, and to deliver 1/3 of the harvest to the food programs.</h3>
+                    <h3 class="section-subheading text-muted">Your information will, like landowner's information, only be available to our food program partners. They may contact you at harvest time to request your help to pick/harvest/glean fruit and/or vegetables to share with the landowners & yourself, and to deliver 1/3 of the harvest to the food program.</h3>
                 </div>
         </section>
         <!-- Portfolio Grid-->
@@ -333,6 +333,33 @@
                 </div>
             </div>
         </div>
+        <!-- Donate Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">What kind of produce do you want to donate?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a class="btn btn-primary" href="https://arcg.is/quDK10">Fruits</a>
+                        <a class="btn btn-primary" href="https://arcg.is/9q5v0">Vegetables & Herbs</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var myModal = document.getElementById('myModal')
+            var myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', function () {
+                myInput.focus()
+            })
+        </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
