@@ -39,6 +39,10 @@
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
+                <button type="button" class="btn btn-primary btn-xl text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Donate Produce
+                </button>
+                <a class="btn btn-primary btn-xl text-uppercase" href="https://forms.gle/3S5n7t27WobJ1UJPA ">Volunteer Signup</a>
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading" style="color: white;">For more information, please contact:<br>
@@ -50,6 +54,33 @@
                 </div>
             </div>
         </section>
+        <!-- Donate Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">What kind of produce do you want to donate?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a class="btn btn-primary" href="https://arcg.is/iG49m">Fruits</a>
+                        <a class="btn btn-primary" href="https://arcg.is/u88zy">Vegetables & Herbs</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var myModal = document.getElementById('myModal')
+            var myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', function () {
+                myInput.focus()
+            })
+        </script>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
